@@ -24,7 +24,6 @@ dotnet add package MySql.EntityFrameworkCore
 
 ## Build and run
 
-dotnet build
-dotnet run
+dotnet build && dotnet run
 
 ## Output should be a table of publishers and books
