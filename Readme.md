@@ -1,4 +1,4 @@
-# install .NET 7 SDK
+# Install .NET 7 SDK
 
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
@@ -14,17 +14,17 @@ dotnet add package Microsoft.EntityFrameworkCore
 
 docker run -p 3333:3306 --name db -e MYSQL_ROOT_PASSWORD=secret -d mysql:latest
 
-## verify that container is running
+## Verify that container is running
 
 docker ps
 
-## add MySql Entity EntityFrameworkCore package to project
+## Add MySql Entity EntityFrameworkCore package to project
 
 dotnet add package MySql.EntityFrameworkCore
 
-## build and run
+## Build and run
 
 dotnet build
 dotnet run
 
-## output should be a table of publishers and books
+## Output should be a table of publishers and books
