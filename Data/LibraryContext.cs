@@ -8,8 +8,7 @@ public class LibraryContext : DbContext
     public DbSet<Publisher>? Publishers { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        // optionsBuilder.UseMySQL("server=localhost;database=library;user=root;port=3333;password=secret");
-        optionsBuilder.UseMySQL("server=192.168.0.25;database=library;user=pmo;port=3306;password=pmotest");
+        optionsBuilder.UseMySQL("server=localhost;database=library;user=root;port=3333;password=secret");
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
